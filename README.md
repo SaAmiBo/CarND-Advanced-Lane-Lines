@@ -14,14 +14,14 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./camera_cal_02.png "Undistorted"
-[image2]: ./color_and_gradiant.png "ColorGradiant"
-[image3]: ./perspective.png "Perspective"
-[image4]: ./warped_binary.png "WarpedBinary"
-[image5]: ./histogram.png "Histogram"
-[image6]: ./slide_search.png "SlideSearch"
-[image7]: ./poly_search.png "PolySearch"
-[image8]: ./output.png "Output"
+[image1]: ./Report/camera_cal_02.png "Undistorted"
+[image2]: ./Report/color_and_gradiant.png "ColorGradiant"
+[image3]: ./Report/perspective.png "Perspective"
+[image4]: ./Report/warped_binary.png "WarpedBinary"
+[image5]: ./Report/histogram.png "Histogram"
+[image6]: ./Report/slide_search.png "SlideSearch"
+[image7]: ./Report/poly_search.png "PolySearch"
+[image8]: ./Report/output.png "Output"
 
 
 
