@@ -22,9 +22,7 @@ The goals / steps of this project are the following:
 [image6]: ./slide_search.png "SlideSearch"
 [image7]: ./poly_search.png "PolySearch"
 [image8]: ./output.png "Output"
-
-
-
+[image9]: ./curvature_equation.png "curvature_equation"
 
 ---
 ## Pipeline Structure
@@ -63,6 +61,12 @@ Once the lane pixels are identified for one frame, the polynomial can be fit to 
 Both the left and right lanes are the instances of the defined Line class. There are a few attributes to this class. Examples of those are `Line.recent_fit` to hold the recent n number of polynomial fits to the lane, `Line.radius` as the lane radius for the current fit, and `Line.allx` and `Line.ally` as the x and y indices of the identified lane pixels. 
 There are also three defined functions for this class. `Line.x_append()` and `Line.fit_append()` appends the current x values for the fitted polynomial as well as the fit parameters to the associated lists. `Line.update()` updates some of the attributes such as the radius. 
 
+## Calculating Curvature
+I have calculated the curvature of both the right and left lanes using parabola fit parameters using the equations described in the following image:
+
+![alt text][image9]
+
+The A and B are the first two fit parameters and xm and ym are the ratio of meter to pixel. I have used xm = 70/720 and ym = 3.7/480.
 ## Checking the Fit
 `fit_check()` functions receives the left and right fit and does a few checks to find out if the fits are valid. To check if the lanes are almost parallel, the check is 
 
